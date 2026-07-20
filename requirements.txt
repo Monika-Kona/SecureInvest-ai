@@ -1,0 +1,58 @@
+# SecureInvest-AI - Project Requirements
+# =======================================
+# This is a Next.js (Node.js) project.
+# Install all dependencies with: npm install
+# Run dev server with: npm run dev
+#
+# ── System Requirements ───────────────────────────────────────
+# Node.js >= 18.x
+# npm >= 9.x
+# PostgreSQL (Neon.tech recommended)
+
+# ── Runtime Dependencies ──────────────────────────────────────
+
+# Framework
+next@16.2.10
+react@19.2.4
+react-dom@19.2.4
+
+# AI / ML
+@google/generative-ai@^0.24.1
+
+# Database (Prisma ORM + PostgreSQL adapter)
+@prisma/client@^7.8.0
+@prisma/adapter-pg@^7.8.0
+prisma@^7.8.0
+pg@^8.22.0
+
+# Authentication & Security
+bcryptjs@^3.0.3
+jsonwebtoken@^9.0.3
+
+# Utilities
+csv-parse@^7.0.1
+dotenv@^17.4.2
+
+# ── Dev Dependencies ──────────────────────────────────────────
+
+# Styling
+tailwindcss@^4
+@tailwindcss/postcss@^4
+
+# TypeScript & Type Definitions
+typescript@^5
+@types/node@^20
+@types/react@^19
+@types/react-dom@^19
+@types/bcryptjs@^2.4.6
+@types/jsonwebtoken@^9.0.10
+@types/pg@^8.20.0
+
+# Linting
+eslint@^9
+eslint-config-next@16.2.10
+
+# ── External API Keys Required (see .env.example) ─────────────
+# DATABASE_URL     - Neon.tech PostgreSQL connection string
+# JWT_SECRET       - Secret key for JWT token signing
+# GROQ_API_KEY     - Google Gemini / Groq API key
