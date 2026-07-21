@@ -2,9 +2,10 @@ services:
   - type: web
     name: secureinvest-ai
     env: node
+    runtime: node
     region: oregon
     plan: free
-    buildCommand: npm install && npx prisma db push && npm run build
+    buildCommand: npm install && npx prisma generate && npm run build
     startCommand: node .next/standalone/server.js
     envVars:
       - key: NODE_ENV
